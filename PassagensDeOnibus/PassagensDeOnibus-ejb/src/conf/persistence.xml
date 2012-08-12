@@ -4,9 +4,9 @@
     <jta-data-source>jdbc/sample</jta-data-source>
     <class>entity.Hotel</class>
     <class>entity.Cliente</class>
-    <class>entity.Carro</class>
     <class>entity.Pacote</class>
     <class>entity.Passagem</class>
+    <class>entity.Onibus</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties/>
   </persistence-unit>
