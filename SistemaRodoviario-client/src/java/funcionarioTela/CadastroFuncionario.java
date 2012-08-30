@@ -7,6 +7,7 @@ package funcionarioTela;
 import controller.InterfaceController;
 import java.util.Properties;
 import javax.naming.*;
+import sistemarodoviarioclient.MenuPricipal;
 import transferObject.FuncionarioTO;
 
 /**
@@ -105,6 +106,8 @@ public class CadastroFuncionario extends javax.swing.JPanel {
             funcionarioTO.setNome(txtNome.getText());
             fc.salvaObjeto(funcionarioTO);
             this.setVisible(false);
+            MenuPricipal mp = new MenuPricipal();
+            mp.setVisible(true);
         } catch (Exception e) {
             e.printStackTrace();
         }

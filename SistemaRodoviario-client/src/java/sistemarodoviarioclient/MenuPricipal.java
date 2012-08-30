@@ -30,6 +30,15 @@ public class MenuPricipal extends javax.swing.JFrame {
     private void initComponents() {
 
         butCadastroFuncionario = new javax.swing.JButton();
+        butCadastroOnibus = new javax.swing.JButton();
+        butListaFuncionario = new javax.swing.JButton();
+        butListaOnibus = new javax.swing.JButton();
+        butCadastroRota = new javax.swing.JButton();
+        butListaRota = new javax.swing.JButton();
+        butCadstroLinha = new javax.swing.JButton();
+        butListaLinha = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -40,21 +49,76 @@ public class MenuPricipal extends javax.swing.JFrame {
             }
         });
 
+        butCadastroOnibus.setText("Cadastro de Ônibus");
+
+        butListaFuncionario.setText("Listar Funcionários");
+
+        butListaOnibus.setText("Listar Ônibus");
+
+        butCadastroRota.setText("Cadastro de Rotas");
+
+        butListaRota.setText("Listar Rotas");
+
+        butCadstroLinha.setText("Cadastro de Linhas");
+
+        butListaLinha.setText("Listar Linhas");
+
+        jLabel1.setText("Cadastros");
+
+        jLabel2.setText("Listas");
+
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
-                .add(56, 56, 56)
+                .add(butCadastroOnibus)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 107, Short.MAX_VALUE)
+                .add(butListaOnibus)
+                .addContainerGap())
+            .add(layout.createSequentialGroup()
                 .add(butCadastroFuncionario)
-                .addContainerGap(147, Short.MAX_VALUE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(butListaFuncionario))
+            .add(layout.createSequentialGroup()
+                .add(butCadstroLinha)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(butListaLinha))
+            .add(layout.createSequentialGroup()
+                .add(29, 29, 29)
+                .add(jLabel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 95, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(jLabel2)
+                .add(70, 70, 70))
+            .add(layout.createSequentialGroup()
+                .add(butCadastroRota)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(butListaRota))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
-                .add(59, 59, 59)
-                .add(butCadastroFuncionario)
-                .addContainerGap(212, Short.MAX_VALUE))
+                .addContainerGap()
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(jLabel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 54, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(jLabel2))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(butCadstroLinha)
+                    .add(butListaLinha))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(butCadastroFuncionario)
+                    .add(butListaFuncionario))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(butCadastroOnibus)
+                    .add(butListaOnibus))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(butCadastroRota)
+                    .add(butListaRota))
+                .addContainerGap(231, Short.MAX_VALUE))
         );
 
         pack();
@@ -112,5 +176,14 @@ public class MenuPricipal extends javax.swing.JFrame {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton butCadastroFuncionario;
+    private javax.swing.JButton butCadastroOnibus;
+    private javax.swing.JButton butCadastroRota;
+    private javax.swing.JButton butCadstroLinha;
+    private javax.swing.JButton butListaFuncionario;
+    private javax.swing.JButton butListaLinha;
+    private javax.swing.JButton butListaOnibus;
+    private javax.swing.JButton butListaRota;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
