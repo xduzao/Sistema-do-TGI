@@ -6,6 +6,7 @@ package entity;
 
 import java.io.Serializable;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -14,12 +15,12 @@ import javax.persistence.Table;
  * @author Eduardo
  */
 @Entity
-@Table(name="funcionario")
 public class Funcionario implements Serializable {
-    @Id
+    @Id @GeneratedValue
     private Long idFuncionario;
     private String nome;
     private String cargo;
+    private String senha;
 
     public String getCargo() {
         return cargo;
@@ -44,5 +45,22 @@ public class Funcionario implements Serializable {
     public void setId(Long id) {
         this.idFuncionario = id;
     }
+
+    public Long getIdFuncionario() {
+        return idFuncionario;
+    }
+
+    public void setIdFuncionario(Long idFuncionario) {
+        this.idFuncionario = idFuncionario;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+    
     
 }

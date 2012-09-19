@@ -12,3 +12,6 @@
 /SistemaRodoviario-client/dist/
 /SistemaRodoviario/SistemaRodoviario-ejb/dist/
 /SistemaRodoviario-client/build/
+/SistemaRodoviario/SistemaRodoviario-war/build/
+/SistemaRodoviario/build/
+/SistemaRodoviario/SistemaRodoviario-war/dist/

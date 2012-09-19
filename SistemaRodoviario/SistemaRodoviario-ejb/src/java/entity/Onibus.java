@@ -5,7 +5,6 @@
 package entity;
 
 import java.io.Serializable;
-import java.util.Collection;
 import javax.persistence.*;
 
 /**
